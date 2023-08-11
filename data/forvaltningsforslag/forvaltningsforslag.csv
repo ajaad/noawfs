@@ -1,0 +1,3 @@
+NAME;Title;TYPE;STATUS;COLOR;OUTLINECOLOR;DATA;FORMATS;COLUMNS;ABSTRACT;DESCRIPTION
+restaurering;Restaureringsområder;POLYGON;ON;#ff3300;#99ee33;geodata;gml,geojson;integer:row,string:navn;Sammendrag om restaureringsområder;Beskrivelse av restaureringsområder
+sammenvillmark;Sammenhengende Villmark;POLYGON;ON;#ff3300;#99ee33;geodata;gml,geojson;integer:active,string:navn;Sammendrag om sammenhengende villmark;Beskrivelse av sammenhengende villmark

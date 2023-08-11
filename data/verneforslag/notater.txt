@@ -1,0 +1,19 @@
+
+foreslattefLO
+        strokeColor: [0,0,240,1],
+        fillColor: [0,0,240,0.4],
+        
+        0000f0ff
+        0000f040
+        
+        
+foreslatteVLOdata = ["GeoJSONdata", {
+    data: "data/foreslatteVLO.geojson",
+    strokeColor: [240,240,0,1],
+    fillColor: [240,240,0,0.4],
+    strokeWidth: 2,
+    strokeColorSelect: [240,240,0,1],
+    fillColorSelect: [240,240,0,0.7],
+    
+    f0f000ff
+    f0f00040

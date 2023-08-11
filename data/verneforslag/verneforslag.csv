@@ -1,0 +1,4 @@
+NAME;Title;TYPE;STATUS;COLOR;OUTLINECOLOR;DATA;FORMATS;COLUMNS;ABSTRACT;DESCRIPTION
+landskapsvern;Landskapsvern;POLYGON;ON;#f0f00040;#f0f000ff;geodata;gml,geojson;string:navn;Foreslatte landskapsvernområder
+naturreservat;Natureservat;POLYGON;ON;#00f000ff;#00f00040;geodata;gml,geojson;integer:id,string:Verneverdi,string:Stjerner,string:navn,string:verdi;Kandidater for naturvern
+friluftsomrader;Friluftsområder;POLYGON;ON;#0000f040;#0000f0ff;geodata;gml,geojson;string:navn,integer:verdi;Foreslatte friluftslivområder

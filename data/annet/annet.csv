@@ -1,0 +1,2 @@
+NAME;Title;TYPE;STATUS;COLOR;OUTLINECOLOR;DATA;FORMATS;COLUMNS;ABSTRACT;DESCRIPTION
+markagrensa;Markagrensa;POLYGON;ON;#ff3300;#99ee33;geodata;gml,geojson;integer:versjonId;Sammendrag om markagrensa;Beskrivelse av markagrensa

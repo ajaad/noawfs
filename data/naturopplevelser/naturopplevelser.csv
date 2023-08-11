@@ -1,0 +1,2 @@
+NAME;Title;TYPE;STATUS;COLOR;OUTLINECOLOR;DATA;FORMATS;COLUMNS;ABSTRACT;DESCRIPTION
+eventyrskog;Eventyrskog;POLYGON;ON;#ff3300;#99ee33;geodata;gml,geojson;integer:id,integer:REGNR,string:OMRADE,string:PRI,integer:verdi,integer:active;Kort om eventyrskoger;Beskrivelse av eventyrskoger
