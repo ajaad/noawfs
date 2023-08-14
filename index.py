@@ -1,26 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 
-
-import sys
-# Importer pakker fra virtulet miljo:
-sys.path.insert(0,"/var/www/markakartet/wfs2/virtEnv_noa/lib/python3.11/site-packages")
-
 import os
 import bs4
-import pywfs
 
 # This is a superservice script
 
 # It provides an list of available WFS-services within the service.
 
+# List the WFS-services that should be available:
+    
 wfs_dict  = {"Naturopplevelser": "naturopplevelser.py",
              "Verneforslag": "verneforslag.py",
              "Forvaltningsforslag": "forvaltningsforslag.py"}
 
 if __name__ == "__main__":
     
-    #if True:
     if os.environ["QUERY_STRING"]:
         # Create a list to be used for applications
         # it shall contain information such as
@@ -66,8 +61,6 @@ if __name__ == "__main__":
             element.append(text)
             html_list.append(element)
             
-        
-        
         
         file.close()
         print(soup)
