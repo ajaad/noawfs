@@ -18,7 +18,9 @@ if false; then
 	source virtEnv/bin/activate
 	
 	# Install a package for building the pywfs-package
-	pip install build
+	pip3 install build
+	pip3 install requests
+	pip3 install lxml
 fi
 
 if true; then
