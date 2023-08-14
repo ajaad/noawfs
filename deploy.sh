@@ -35,6 +35,10 @@ if true; then
 	pip3 install whl_file/pywfs-*
 fi
 
+if false; then
+	# Hardlink to apache .conf-file.
+	ln /etc/apache2/sites-available/markakartet.lan.conf ./markakartet.lan.conf
+	# Must be on the same partition to work
+fi
 
-
-
+cp /etc/apache2/sites-available/markakartet.lan.conf ./markakartet.lan.conf
