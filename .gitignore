@@ -2,6 +2,7 @@
 # Do not save content from these 
 whl_file
 virtEnv
+ssl
 
 ## All files with double underlines
 *__*

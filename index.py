@@ -4,6 +4,11 @@
 import os
 import bs4
 
+import requests
+requests.packages.urllib3.disable_warnings()
+
+import time
+
 # This is a superservice script
 
 # It provides an list of available WFS-services within the service.
@@ -15,31 +20,32 @@ wfs_dict  = {"Naturopplevelser": "naturopplevelser.py",
              "Forvaltningsforslag": "forvaltningsforslag.py"}
 
 if __name__ == "__main__":
-    
-    if os.environ["QUERY_STRING"]:
+
+    try:
+        query_string = os.environ["QUERY_STRING"]
+        urlroot = ""
+    except:
+        query_string = "request=getxmlinfo"
+        urlroot = "https://markakartet.localhost/wfs/"
+        
+    if query_string:
         # Create a list to be used for applications
         # it shall contain information such as
         # layer, color of layer, description and abstract.
         
-        #pass
+        
+        # Please update the .xml-file if not updated.
+        
+        file = open("service.xml", 'r')
+        content = file.read()
+        
+        
         print("Content-type: text/xml; charset=UTF-8\n")
+        print(content)
         
-        # Show layers
-        soup = bs4.BeautifulSoup()
-        main = soup.new_tag("main")
+        file.close()
         
-        for wfs_name in wfs_dict.keys():
-            tag = soup.new_tag("service")
-            tag["name"] = wfs_name
-            
-            # Call service for layers 
-            #tag.new_tag = pywfs.getLayersInfo(wfs_dict[wfs_name])
-            
-            main.append(tag)
-            
-        soup.append(main)
-            
-        print(soup)
+        
         
     else:
         
