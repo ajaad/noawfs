@@ -1,0 +1,7 @@
+
+# Do not save content from these 
+whl_file
+virtEnv
+
+## All files with double underlines
+*__*

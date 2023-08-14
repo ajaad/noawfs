@@ -20,8 +20,8 @@ wfs_dict  = {"Naturopplevelser": "naturopplevelser.py",
 
 if __name__ == "__main__":
     
-    if True:
-    #if os.environ["QUERY_STRING"]:
+    #if True:
+    if os.environ["QUERY_STRING"]:
         # Create a list to be used for applications
         # it shall contain information such as
         # layer, color of layer, description and abstract.

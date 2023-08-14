@@ -4,7 +4,8 @@
 
 import sys
 # Importer pakker fra virtulet miljo:
-sys.path.insert(0,"/var/www/markakartet/wfs2/virtEnv_noa/lib/python3.11/site-packages")
+#sys.path.insert(0,"/home/ajaad/Documents/pywfs")
+#sys.path.insert("/var/www/markakartet/noawfs/test/pywfs-0.0.6")
 
 import os
 import pywfs
