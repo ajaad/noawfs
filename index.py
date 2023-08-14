@@ -7,8 +7,6 @@ import bs4
 import requests
 requests.packages.urllib3.disable_warnings()
 
-import time
-
 # This is a superservice script
 
 # It provides an list of available WFS-services within the service.
@@ -23,8 +21,15 @@ if __name__ == "__main__":
 
     try:
         query_string = os.environ["QUERY_STRING"]
-        urlroot = ""
+        urlroot = os.environ["REQUEST_SCHEME"] + "://" + os.environ["HTTP_HOST"] + os.environ["CONTEXT_PREFIX"] + "/"  
+        #print("Content-type: text/html; charset=UTF-8\n")
+        #print(os.environ)
+        
+        # os.environ["REQUEST_URI"] 
+        
+        #print(urlroot)
     except:
+        # To be able to test the script in a terminal.
         query_string = "request=getxmlinfo"
         urlroot = "https://markakartet.localhost/wfs/"
         
@@ -38,15 +43,12 @@ if __name__ == "__main__":
         
         file = open("service.xml", 'r')
         content = file.read()
+        file.close()
         
         
         print("Content-type: text/xml; charset=UTF-8\n")
         print(content)
-        
-        file.close()
-        
-        
-        
+
     else:
         
         # If no query provided,
